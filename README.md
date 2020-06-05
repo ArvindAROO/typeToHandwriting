@@ -1,4 +1,6 @@
 # typeToHandwriting
+
+[![Arvind Krishna](https://img.shields.io/badge/AK-Made%20by%20AK-success)](https://github.com/ArvindAROO/)
 A project which will convert plain text to handwritten like image
 
 A python based project which will take image as plain text and give a image containing the text in handwritten like format
