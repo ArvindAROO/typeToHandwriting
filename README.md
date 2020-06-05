@@ -22,4 +22,4 @@ The image formed will only be a temporary file and will be lost if not saved
 You can add your own handwriting by creating the necessary image files
 
 Thank you,
-./<AK>
+  ./<AK>
