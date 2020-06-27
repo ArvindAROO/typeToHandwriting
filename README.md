@@ -19,7 +19,7 @@ You can decide to save it or not by taking a screenshot or whatever
 
 # NOTE
 This is an example of the generated file, the image size can be handled from A4 to A3
-![example](https://github.com/ArvindAROO/typeToHandwriting/blob/master/example.bmp)
+![example](https://github.com/ArvindAROO/typeToHandwriting/blob/master/example.jpeg)
 
 
 
