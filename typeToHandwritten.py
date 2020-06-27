@@ -2,7 +2,8 @@
 """
 Created on Thu Apr 16 17:52:19 2020
 
-@author: Ak
+@author: Arvind Krishna
+@ github.com/ArvindAROO
 """
 from PIL import Image
 
@@ -18,7 +19,8 @@ def writeIt(char):
     """Takes indivial chars and adds them to image"""
     global gap, _
     if char == '\n':
-        pass
+        gap = 50
+        _ += 200
     else:
 		#this will generate and open the image file
         char.lower()
@@ -33,7 +35,7 @@ def caller(word):
     if gap > sizeOfSheet - 100*(len(word)):
         gap = 50
         _ += 200
-    print("word revieced by caller is {} and its size is {}".format(word, len(word)))
+    #print("word revieced by caller is {} and its size is {}".format(word, len(word)))
 	#this works on a word by word process
     for letter in word:        
         if letter in allowedChars:
@@ -59,15 +61,15 @@ def dataHandling(Input):
     for i in wordlist:
         caller(i)
         writeIt('space')
-    #add word handling... it is splitting\
-    #the word to accomodate new line
+    writeIt('\n')
 if __name__ == '__main__':
     try:
-        n = int(input("Enter number of lines:"))
-        for i in range(n):
-            string = input("Enter text:")
-            dataHandling(string)
-            writeIt('\n')
-        BG.show()
-    except ValueError as E:
-        print("{}\nTry again".format(E))
+        fileName = input("Enter file name: ")
+        with open(fileName, 'r') as File:
+            text = File.readlines()
+            for line in text:
+                dataHandling(line)
+            File.close()
+        BG.save('new.bmp')
+    except Exception as E:
+        print(E)
