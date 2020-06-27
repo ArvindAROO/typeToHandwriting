@@ -18,10 +18,23 @@ You can decide to save it or not by taking a screenshot or whatever
 
 
 # NOTE
-The image formed will only be a temporary file and will be lost if not saved
+This is an example of the generated file, the image size can be handled from A4 to A3
+![example]https://github.com/ArvindAROO/typeToHandwriting/blob/master/example.bmp
 
 
-You can add your own handwriting by creating the necessary image files
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Thank you,
   ./<AK>
