@@ -1,2 +1,0 @@
-Pillow
-Python 3.6+
