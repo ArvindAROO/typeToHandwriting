@@ -7,7 +7,7 @@ Created on Thu Apr 16 17:52:19 2020
 """
 from PIL import Image
 
-BG = Image.open("bg.png")
+BG = Image.open("imagesFiles/bg.png")
 #creating the instance of background image
 sizeOfSheet = BG.width
 gap, _ = 50, 25
@@ -24,7 +24,7 @@ def writeIt(char):
     else:
 		#this will generate and open the image file
         char.lower()
-        cases = Image.open("%s.png"%char)
+        cases = Image.open("images/%s.png"%char)
         BG.paste(cases, (gap, _))
         size = cases.width
         gap += size
@@ -70,6 +70,9 @@ if __name__ == '__main__':
             for line in text:
                 dataHandling(line)
             File.close()
-        BG.save('new.bmp')
+        if(".txt" in fileName):
+            BG.save(fileName[:-4]+'.bmp')
+        else:
+            BG.save(fileName+'.bmp')
     except Exception as E:
         print(E)
