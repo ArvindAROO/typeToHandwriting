@@ -8,15 +8,13 @@ A python based project which will take image as plain text and give a image cont
 # Requirements
 1. python3.6+
 2. PIL library must be installed
-
+The user can install all the required libraries by typing `pip install -r requirements.txt`
 All the necessary image files must be in the same directory as the python script
 
 Run the script and it will prompt the user to enter the text.
 As soon as the input is completed the image will be formed and shown.
 
-You can decide to save it or not by taking a screenshot or whatever
-
-
+That will be saved as a image
 # NOTE
 This is an example of the generated file, the image size can be handled from A4 to A3
 ![example](https://github.com/ArvindAROO/typeToHandwriting/blob/master/example.jpeg)
