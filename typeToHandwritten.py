@@ -24,7 +24,7 @@ def writeIt(char):
     else:
 		#this will generate and open the image file
         char.lower()
-        cases = Image.open("images/%s.png"%char)
+        cases = Image.open("imagesFiles/%s.png"%char)
         BG.paste(cases, (gap, _))
         size = cases.width
         gap += size
